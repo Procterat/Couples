@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game">
+        <div class="main__text">
+            <h1 class="title">Пары</h1>
+            <div class="step">
+                Шаги: 
+                <span id="step__number">0</span>
+                 шагов
+            </div>
+            <div class="time">
+                Время:
+                <span id="time__number">60</span>
+                 сек
+            </div>
+        </div>
+        <form class="choose">
+            <label class="choose__title"><h2>Настроить количество карточек (от 2 до 6)</h2></label>
+            <input type="text" placeholder="По горизонтали / вертикали" value="4" step="2" min="2" max="6">
+            <button>НАЧАТЬ</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
