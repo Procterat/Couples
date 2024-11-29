@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css'>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -24,9 +25,21 @@
         <form class="choose">
             <label class="choose__title"><h2>Настроить количество карточек (от 2 до 6)</h2></label>
             <input type="text" placeholder="По горизонтали / вертикали" value="4" step="2" min="2" max="6">
-            <button>НАЧАТЬ</button>
+            <button class="choose__button">НАЧАТЬ</button>
         </form>
     </div>
+
+    <template id="gameTableTemplate">
+        <div class="table"></div>
+        <button class="table__button">РЕСТАРТ</button>
+    </template>
+
+    <template id="cardTemplate">
+        <div class="card">
+            <i class="flipped-icon fa" id="flippedIcon"></i>
+            <i class="default-icon fa fa-question-circle"></i>
+        </div>
+    </template>
 
     <script src="index.js"></script>
 </body>

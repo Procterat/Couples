@@ -72,3 +72,29 @@ button {
 button:hover{
     color: rgba(28, 194, 83, 0.7);
 }
+
+.table {
+    display: grid;
+    min-width: 500px;
+    max-width: 1000px;
+    margin-block: 20px;
+    gap: 10px;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+}
+
+.card {
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(28, 194, 83, 0.5);
+    border-radius: 5px;
+    transition: .3s;
+    font-size: 30px;
+    cursor: pointer;
+}
+  
+.card:hover {
+    background-color: rgba(28, 194, 83, 1);
+}
