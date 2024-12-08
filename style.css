@@ -10,6 +10,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('./Фон.png');
+    background-size: cover;
 }
 
 .game {
@@ -31,6 +33,7 @@ body {
 
 .choose {
     margin-top: 4%;
+    display: block;
 }
 
 input {
@@ -101,8 +104,21 @@ button:hover{
 
 .flipped-icon {
     display: none;
+    pointer-events: none;
 }
 
 .default-icon {
     display: block;
+    pointer-events: none;
+}
+
+.flip {
+    background: rgba(28, 194, 83, 1);
+    transform: perspective(100px) rotateY(180deg);
+    user-select: none;
+}
+
+.successfully {
+    background-color: rgb(186, 52, 219);
+    transform: scale(0.95);
 }

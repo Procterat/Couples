@@ -22,11 +22,11 @@
                  сек
             </div>
         </div>
-        <form class="choose">
+        <div class="choose">  
             <label class="choose__title"><h2>Настроить количество карточек (от 2 до 6)</h2></label>
             <input type="text" placeholder="По горизонтали / вертикали" value="4" step="2" min="2" max="6">
             <button class="choose__button">НАЧАТЬ</button>
-        </form>
+        </div>
     </div>
 
     <template id="gameTableTemplate">
@@ -40,7 +40,11 @@
             <i class="default-icon fa fa-question-circle"></i>
         </div>
     </template>
-
-    <script src="index.js"></script>
+    
+    <script type="module" src="./scripts/createBoard.js"></script>
+    <script type="module" src="./scripts/cards.js"></script>
+    <script type="module" src="./scripts/gameLogic.js"></script>
+    <script type="module" src="./scripts/timer.js"></script>
+    <script type="module" src="./index.js"></script>
 </body>
 </html>
