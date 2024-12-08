@@ -41,4 +41,4 @@ function createBoard() {
     });
 }
 
-export { createBoard};
+export { createBoard, numberOfElements};
