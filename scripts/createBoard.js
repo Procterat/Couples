@@ -41,4 +41,4 @@ function createBoard() {
     });
 }
 
-export { createBoard, numberOfElements };
+export { createBoard, numberOfElements, choose, input, gameTableTemplate, game };
